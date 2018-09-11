@@ -14,4 +14,3 @@ class ItemFormTest(TestCase):
         form = ItemForm(data={'text': ''})
         self.assertFalse(form.is_valid())
         self.assertEqual(form.errors['text'], [EMPTY_ITEM_ERROR])
-        #form.save()
